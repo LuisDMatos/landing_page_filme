@@ -1,0 +1,56 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url(../images/Chihiro_capa.jpg);
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -84px;
+    margin-bottom: 60px;
+
+    @media (max-width: 1023px) {
+        background-image: url(../images/Chihiro_capa.jpg);
+        padding-top: calc(50vw + 25px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: -84px;
+    }
+
+    @media (max-width: 768px) {
+        background-image: url(../images/Chihiro_capa.jpg);
+        padding-top: calc(50vw + 25px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: -68px;
+    }
+
+    &__content {
+        max-width: 640px;
+
+        &__branding {
+            max-width: 540px;
+            margin: 0 auto 38px;
+
+            @media (max-width: 768px) {
+                max-width: 180px;
+            }
+        }
+
+        .title {
+            padding-bottom: 64px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            margin-top: 60px;
+        }
+    }
+    
+    .button {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+}
